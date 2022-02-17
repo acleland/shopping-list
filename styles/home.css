@@ -1,4 +1,9 @@
 /* add home page styles here */
+.item:hover {
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
 .item.bought {
     text-decoration: line-through;
 }
