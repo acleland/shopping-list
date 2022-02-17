@@ -1,1 +1,4 @@
 /* add home page styles here */
+.item.bought {
+    text-decoration: line-through;
+}
