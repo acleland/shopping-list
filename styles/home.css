@@ -7,3 +7,11 @@
 .item.bought {
     text-decoration: line-through;
 }
+
+.loginEmail {
+    font-weight: bold;
+}
+
+#delete {
+    background-color: rgb(238, 98, 98);
+}

@@ -48,6 +48,16 @@ export async function toggleItem(item) {
     return checkError(resp);
 }
 
+export async function createItem(item) {
+    const resp = await client.from('shoppinglist').insert([{ item: item, user_id: getUser().id }]);
+    return checkError(resp);
+}
+
+export async function deleteAllItems() {
+    const resp = await client.from('shoppinglist').delete().match({ user_id: getUser().id });
+    return checkError(resp);
+}
+
 function checkError({ data, error }) {
     return error ? console.error(error) : data;
 }
