@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css"> -->
+    <link rel="stylesheet" href="../styles/home.css">
+    <title>Shopping List</title>
+</head>
+
+<body>
+    <header>
+        <button id="logout">Logout</button>
+    </header>
+    <main>
+        <h1>Shopping List</h1>
+        <form id="add-item" action="">
+            <input type="text" name="item">
+            <button>Add Item</button>
+            <button id="delete">Clear Shopping List</button>
+        </form>
+        <section id="list-container">
+            <ul id="shopping-list">
+                <li class="item">Milk</li>
+                <li class="item bought">Eggs</li>
+            </ul>
+        </section>
+        
+        
+        
+    </main>
+    <script type="module" src="./shoppinglist.js"></script>
+</body>
+
+</html>

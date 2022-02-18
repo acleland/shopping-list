@@ -1,1 +1,17 @@
 /* add home page styles here */
+.item:hover {
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+.item.bought {
+    text-decoration: line-through;
+}
+
+.loginEmail {
+    font-weight: bold;
+}
+
+#delete {
+    background-color: rgb(238, 98, 98);
+}
