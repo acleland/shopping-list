@@ -42,6 +42,10 @@ export async function fetchItems() {
     return checkError(resp);
 }
 
+export async function toggleItem(item) {
+    
+}
+
 function checkError({ data, error }) {
     return error ? console.error(error) : data;
 }
