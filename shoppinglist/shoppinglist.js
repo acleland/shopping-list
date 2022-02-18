@@ -18,8 +18,9 @@ async function displayItems() {
     
     for (let item of items) {
         const li = renderItem(item);
-        li.addEventListener('click', () => {
-            toggleItem(item);
+        li.addEventListener('click', async () => {
+            await toggleItem(item);
+            displayItems();
         });
         shoppingList.append(li);
     }

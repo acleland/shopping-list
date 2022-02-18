@@ -38,12 +38,14 @@ export async function logout() {
 }
 
 export async function fetchItems() {
-    const resp = await client.from('shoppinglist').select('*');
+    const resp = await client.from('shoppinglist').select('*').order('id');
     return checkError(resp);
 }
 
 export async function toggleItem(item) {
-    
+
+    const resp = await client.from('shoppinglist').update({ bought: !item.bought }).match({ id: item.id, user_id: getUser().id });
+    return checkError(resp);
 }
 
 function checkError({ data, error }) {
